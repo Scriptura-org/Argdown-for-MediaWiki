@@ -29,7 +29,7 @@
 		}
 	},
 	"Hooks": {
-		"BeforePageDisplay": "BoilerPlateHooks"
+		"ParserFirstCallInit": "Argdown::onParserFirstCallInit"
 	},
 	"MessagesDirs": {
 		"BoilerPlate": [
