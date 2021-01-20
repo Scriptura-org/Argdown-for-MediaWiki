@@ -13,5 +13,9 @@
 	},
 	"eslintIgnore": [
 		"vendor/**"
-	]
+	],
+	"dependencies": {
+		"@argdown/core": "^1.5.0",
+		"@argdown/node": "^1.5.3"
+	}
 }
