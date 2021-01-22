@@ -3,7 +3,7 @@ use MediaWiki\Shell\Shell;
 use MediaWiki\Logger\LoggerFactory;
 
 class Argdown {
-    static function onParserInit( Parser $parser ) {
+    public static function onParserFirstCallInit( Parser $parser ) {
         $parser->setHook( 'Argdown', array( __CLASS__, 'helloWorldRender' ) );
         return true;
     }
