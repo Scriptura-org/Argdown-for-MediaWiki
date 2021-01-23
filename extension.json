@@ -17,7 +17,8 @@
 	},
 	"config": {},
 	"Hooks": {
-		"ParserFirstCallInit": "Argdown::onParserFirstCallInit"
+		"ParserFirstCallInit": "Argdown::onParserFirstCallInit",
+		"BeforePageDisplay": "Argdown::onBeforePageDisplay"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
@@ -27,7 +28,7 @@
 		"ext.Argdown": {
 			"dependencies": [],
 			"messages": [],
-			"styles": [],
+			"styles": ["argdown.css"],
 			"scripts": []
 		}
 	},

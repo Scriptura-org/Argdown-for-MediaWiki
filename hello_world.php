@@ -7,6 +7,9 @@ class Argdown {
         $parser->setHook( 'Argdown', array( __CLASS__, 'helloWorldRender' ) );
         return true;
     }
+    public static function onBeforePageDisplay( OutputPage $out ) {
+        $out->addModuleStyles( [ 'ext.Argdown' ]);
+    }
     static function helloWorldRender( $input, array $args, Parser $parser, PPFrame $frame )
     {
         global $IP;
