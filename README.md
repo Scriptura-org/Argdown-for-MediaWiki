@@ -6,7 +6,7 @@ This extension allows contributors to [MediaWiki](https://www.mediawiki.org/wiki
 
 1. Install [Node.js](https://nodejs.org)
 2. [Download the extension](https://github.com/DawnPaladin/Argdown/archive/main.zip) and unzip it into the folder `mediawiki/extensions/Argdown`
-3. `cd` to the extension folder and run `npm install` to install the Argdown engine
+3. `cd` to the `mediawiki/extensions/Argdown` folder and run `npm install` to install the Argdown engine
 4. Run `which node` and put the result in `mediawiki/extensions/Argdown/extension.json`, under `config/NodeJsPath/value`. (The extension needs to know the path to your Node.js executable and may not be able to get it from your $PATH.)
 5. In `mediawiki/LocalSettings.php`, add this line: `wfLoadExtension( 'Argdown' );`
 
