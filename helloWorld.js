@@ -6,6 +6,9 @@ argdown.defaultProcesses["hello-world"] = [
     "parse-input", "build-model", "build-map", "export-html"
 ];
 
+let argument = process.argv[2];
+if (!argument) argument = "";
+
 const sampleArgument = `[Intro]: Argdown is a simple syntax for defining argumentative 
 structures, inspired by Markdown.
   + Writing a list of **pros & cons** in Argdown is as 
@@ -13,7 +16,7 @@ structures, inspired by Markdown.
     right in the middle of one).`;
 
 const request = {
-    input: sampleArgument,
+    input: argument,
     process: "hello-world",
     color: { colorScheme: "iwanthue-red-roses"}
 };
