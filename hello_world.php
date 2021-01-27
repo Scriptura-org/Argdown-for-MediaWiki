@@ -16,8 +16,6 @@ class Argdown {
         $result = Shell::command( "/usr/local/bin/node", "$IP/extensions/Argdown/helloWorld.js", $input )->execute();
         $stdout = $result->getStdout();
         $stderr = $result->getStderr();
-        $ret = "<p>Stdout: $stdout</p>";
-        $ret .= "<p>Stderr: $stderr</p>";
-        return $ret;
+        return $stdout;
     }
 }
