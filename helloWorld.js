@@ -18,7 +18,9 @@ structures, inspired by Markdown.
 const request = {
     input: argument,
     process: "hello-world",
-    color: { colorScheme: "iwanthue-red-roses"}
+    html: {
+        headless: true
+    }
 };
 
 const response = argdown.run(request);
