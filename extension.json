@@ -15,7 +15,16 @@
 	},
 	"AutoloadNamespaces": {
 	},
-	"config": {},
+	"config": {
+		"NodeJsPath": {
+			"value": "/usr/local/bin/node",
+			"description": "Path to the Node.js executable",
+			"public": true
+		}
+	},
+	"ConfigRegistry": {
+		"Argdown": "GlobalVarConfig::newInstance"
+	},
 	"Hooks": {
 		"ParserFirstCallInit": "Argdown::onParserFirstCallInit",
 		"BeforePageDisplay": "Argdown::onBeforePageDisplay"

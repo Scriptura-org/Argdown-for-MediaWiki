@@ -1,5 +1,6 @@
 <?php
 use MediaWiki\Shell\Shell;
+use MediaWiki\MediaWikiServices;
 // use MediaWiki\Logger\LoggerFactory;
 
 class Argdown {
@@ -13,7 +14,10 @@ class Argdown {
     static function argdownRender( $input, array $args, Parser $parser, PPFrame $frame )
     {
         global $IP;
-        $result = Shell::command( "/usr/local/bin/node", "$IP/extensions/Argdown/wiki-plugin.js", $input )->execute();
+        $config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'Argdown' );
+        $nodePath = $config->get( 'NodeJsPath' );
+        if (!file_exists($nodePath)) return "<h1 style='color: maroon'>Can't find Node.js path. Please see README.md for your Argdown plugin.</h1>";
+        $result = Shell::command( $nodePath, "$IP/extensions/Argdown/wiki-plugin.js", $input )->execute();
         $stdout = $result->getStdout();
         $stderr = $result->getStderr();
         return $stdout;
