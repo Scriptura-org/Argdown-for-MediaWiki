@@ -6,7 +6,7 @@ argdown.defaultProcesses["wiki-plugin"] = [
 ];
 
 let argument = process.argv[2];
-if (!argument) argument = "";
+if (!argument) argument = "Error: wiki-plugin.js didn't receive Argdown argument";
 
 const request = {
     input: argument,
