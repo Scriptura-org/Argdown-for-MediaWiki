@@ -14,6 +14,20 @@ This extension allows contributors to [MediaWiki](https://www.mediawiki.org/wiki
 
 On any page, wrap your argument in `<argdown>` `</argdown>` tags and they'll be formatted in Argdown. For more information on composing arguments in Argdown, please see [the official guide](https://argdown.org/guide/creating-argument-maps.html).
 
+## Debugging
+
+This plugin is still under development. If something goes wrong, enabling logging may help to figure out what's going wrong.
+
+To set up the log file, add this to your `LocalSettings.php`:
+
+```php
+$wgDebugLogGroups = array(
+	'argdown' => 'argdown.log'
+);
+```
+
+This will create an `argdown.log` file in your `mediawiki` folder.
+
 ## Roadmap
 
 - [x] Argdown to HTML rendering

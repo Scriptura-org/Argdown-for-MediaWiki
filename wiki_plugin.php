@@ -1,7 +1,6 @@
 <?php
 use MediaWiki\Shell\Shell;
 use MediaWiki\MediaWikiServices;
-// use MediaWiki\Logger\LoggerFactory;
 
 class Argdown {
     public static function onParserFirstCallInit( Parser $parser ) {
@@ -20,6 +19,9 @@ class Argdown {
         $result = Shell::command( $nodePath, "$IP/extensions/Argdown/wiki-plugin.js", $input )->execute();
         $stdout = $result->getStdout();
         $stderr = $result->getStderr();
+        if (!empty($stderr)) {
+            wfDebugLog( 'argdown', "Argdown error: $stderr\n");
+        }
         return $stdout;
     }
 }
