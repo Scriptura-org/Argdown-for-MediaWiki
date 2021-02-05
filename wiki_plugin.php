@@ -8,7 +8,7 @@ class Argdown {
         return true;
     }
     public static function onBeforePageDisplay( OutputPage $out ) {
-        $out->addModuleStyles( [ 'ext.Argdown' ]);
+        $out->addModules( [ 'ext.Argdown' ]);
     }
     static function argdownRender( $input, array $args, Parser $parser, PPFrame $frame )
     {

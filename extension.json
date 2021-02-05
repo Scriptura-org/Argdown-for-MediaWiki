@@ -4,7 +4,7 @@
 		"James Harris"
 	],
 	"url": "https://github.com/DawnPaladin/Argdown",
-	"descriptionmsg": "Parse Argdown on wiki pages",
+	"description": "Parse Argdown on wiki pages",
 	"license-name": "MIT",
 	"type": "tag",
 	"requires": {
@@ -38,7 +38,7 @@
 			"dependencies": [],
 			"messages": [],
 			"styles": ["argdown.css"],
-			"scripts": []
+			"scripts": ["toolbarButton.js"]
 		}
 	},
 	"manifest_version": 2

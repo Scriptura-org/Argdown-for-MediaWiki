@@ -1,6 +1,6 @@
 # Argdown
 
-This extension allows contributors to [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) wikis to write arguments in [Argdown](https://argdown.org/). Arguments will be formatted using [Argdown's official engine for Node.js](https://github.com/christianvoigt/argdown).
+This extension allows contributors to [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) wikis to write arguments in [Argdown](https://argdown.org/), an easy-to-write, machine-parsable format which allows for the automatic generation of argument maps (not yet supported by this plugin). Arguments will be formatted using [Argdown's official engine for Node.js](https://github.com/christianvoigt/argdown).
 
 ## Setup
 
@@ -9,10 +9,25 @@ This extension allows contributors to [MediaWiki](https://www.mediawiki.org/wiki
 3. `cd` to the `mediawiki/extensions/Argdown` folder and run `npm install` to install the Argdown engine
 4. Run `which node` and put the result in `mediawiki/extensions/Argdown/extension.json`, under `config/NodeJsPath/value`. (The extension needs to know the path to your Node.js executable and may not be able to get it from your $PATH.)
 5. In `mediawiki/LocalSettings.php`, add this line: `wfLoadExtension( 'Argdown' );`
+6. If you'd like a toolbar button for Argdown, add this line too: `wfLoadExtension( 'WikiEditor' );`
+7. Navigate to Special:Version on your wiki to verify that the extension is installed.
+8. Try it out! Put something like this on one of your pages: `<argdown>[statement]: I am a statement.</argdown>` Save the page. If "[statement]" appears in blue, the extension is working!
+
+If no text appears when you test the extension, most likely the extension needs more memory. By default, PHP allocates 30 MiB of memory to shell commands, which isn't enough to run Node.js. 
+
+To check whether this is the problem, try putting this line in `mediawiki/LocalSettings.php`: `$wgMaxShellMemory = 0;` This will disable the memory limitation. You probably don't want to do that long-term, so if setting `$wgMaxShellMemory` to 0 allows Argdown to appear, try setting it to 20000000 and increase it from there until it works.
+
+If `$wgMaxShellMemory = 0;` doesn't work, please [open a GitHub issue](https://github.com/DawnPaladin/Argdown/issues) and perhaps I can help you find a solution.
 
 ## Usage
 
-On any page, wrap your argument in `<argdown>` `</argdown>` tags and they'll be formatted in Argdown. For more information on composing arguments in Argdown, please see [the official guide](https://argdown.org/guide/creating-argument-maps.html).
+When editing any wiki page, wrap your argument in `<argdown>` `</argdown>` tags and they'll be formatted in Argdown. 
+
+If you're using [WikiEditor](https://www.mediawiki.org/wiki/Extension:WikiEditor), click this button in the toolbar to insert the Argdown tags:
+
+![Argdown button screenshot](images/argdown-button-screenshot.png)
+
+For more information on composing arguments in Argdown, please see [the official guide](https://argdown.org/guide/creating-argument-maps.html) and [syntax reference](https://argdown.org/syntax/).
 
 ## Debugging
 
@@ -31,7 +46,7 @@ This will create an `argdown.log` file in your `mediawiki` folder.
 ## Roadmap
 
 - [x] Argdown to HTML rendering
-- [ ] Add Argdown button to editing toolbar
+- [x] Add Argdown button to editing toolbar
 - [ ] Display argument maps
 
 ## Feedback

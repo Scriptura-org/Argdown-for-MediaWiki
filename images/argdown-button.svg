@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="208px" height="128px" viewBox="0 0 208 128" enable-background="new 0 0 208 128" xml:space="preserve">
-<path fill="none" stroke="#000000" stroke-width="10" d="M15,5h178c5.523,0,10,4.477,10,10v98c0,5.523-4.477,10-10,10H15
-	c-5.523,0-10-4.477-10-10V15C5,9.477,9.477,5,15,5z"/>
-<path d="M155,98l-30-33h20V30h20v35h20L155,98z"/>
-<g>
-	<path d="M77.256,86.774H53.401L50.086,98H28.632L54.19,30h22.919l25.552,68H80.658L77.256,86.774z M72.897,72.071l-7.506-24.445
-		l-7.427,24.445H72.897z"/>
+<svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.80288 1.18886C1.47096 1.18886 1.20192 1.45498 1.20192 1.78329V13.4341C1.20192 13.7624 1.47096 14.0285 1.80288 14.0285H23.1971C23.529 14.0285 23.7981 13.7624 23.7981 13.4341V1.78329C23.7981 1.45498 23.529 1.18886 23.1971 1.18886H1.80288ZM0 1.78329C0 0.798387 0.807161 0 1.80288 0H23.1971C24.1928 0 25 0.798387 25 1.78329V13.4341C25 14.419 24.1928 15.2174 23.1971 15.2174H1.80288C0.807161 15.2174 0 14.419 0 13.4341V1.78329Z" fill="black"/>
+<path d="M18.6298 11.6508L15.024 7.72759H17.4279V3.56659H19.8317V7.72759H22.2356L18.6298 11.6508Z" fill="black"/>
+<path d="M9.28558 10.3162H6.41839L6.01995 11.6508H3.44135L6.51322 3.56659H9.26791L12.3391 11.6508H9.69447L9.28558 10.3162ZM8.76166 8.56824L7.85949 5.66207L6.96683 8.56824H8.76166Z" fill="black"/>
 </g>
+<defs>
+<clipPath id="clip0">
+<rect width="25" height="15.2174" fill="white"/>
+</clipPath>
+</defs>
 </svg>
