@@ -37,7 +37,7 @@ To set up the log file, add this to your `LocalSettings.php`:
 
 ```php
 $wgDebugLogGroups = array(
-	'argdown' => 'argdown.log'
+	'argdown' => 'extensions/Argdown/argdown.log'
 );
 ```
 

@@ -2,3 +2,5 @@
 /vendor
 /node_modules
 .eslintcache
+
+argdown.log
