@@ -41,7 +41,7 @@ $wgDebugLogGroups = array(
 );
 ```
 
-This will create an `argdown.log` file in your `mediawiki` folder.
+This will create an `argdown.log` file in the extension folder.
 
 ## Roadmap
 
