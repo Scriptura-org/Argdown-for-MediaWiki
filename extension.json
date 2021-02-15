@@ -5,6 +5,7 @@
 	],
 	"url": "https://github.com/DawnPaladin/Argdown",
 	"description": "Parse Argdown on wiki pages",
+	"version": "0.2.0",
 	"license-name": "MIT",
 	"type": "tag",
 	"requires": {
