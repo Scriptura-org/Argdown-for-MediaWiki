@@ -4,7 +4,7 @@
 		"James Harris"
 	],
 	"url": "https://github.com/DawnPaladin/Argdown",
-	"description": "Parse Argdown on wiki pages",
+	"description": "Argument mapping for MediaWiki",
 	"version": "0.2.0",
 	"license-name": "MIT",
 	"type": "tag",
@@ -38,7 +38,7 @@
 		"ext.Argdown": {
 			"dependencies": [],
 			"messages": [],
-			"styles": ["argdown.css"],
+			"styles": ["argdown.css", "wikiglyphs.css"],
 			"scripts": ["toolbarButton.js"]
 		}
 	},

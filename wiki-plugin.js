@@ -18,4 +18,7 @@ const request = {
 
 const response = argdown.run(request);
 const html = response.html;
-console.log(html);
+
+const mapIcon = '<span class="wikiglyph wikiglyph-map" aria-hidden="true"></span>';
+
+console.log(mapIcon + "<br/>" + html);
