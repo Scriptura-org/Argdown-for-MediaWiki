@@ -13,7 +13,12 @@ const request = {
     process: "wiki-plugin",
     html: {
         headless: true
-    }
+    },
+    // webComponent: {
+    //     webComponentScriptUrl: "extensions/Argdown/test/argdown-map.js",
+    //     globalStyleUrl: "extensions/Argdown/test/argdown-map.css",
+    //     webComponentPolyfillUrl: "extensions/Argdown/test/webcomponents-bundle.js"
+    // }
 };
 
 const response = argdown.run(request);

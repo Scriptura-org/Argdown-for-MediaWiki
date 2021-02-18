@@ -17,7 +17,8 @@
 	],
 	"dependencies": {
 		"@argdown/core": "^1.5.0",
-		"@argdown/node": "^1.5.3"
+		"@argdown/node": "^1.5.3",
+		"@argdown/web-components": "^1.6.0"
 	},
 	"engines": {
 		"node": ">=13"
