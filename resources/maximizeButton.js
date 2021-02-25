@@ -1,7 +1,7 @@
 // Prevent maximized argument maps from overlapping with MediaWiki navigation
 $(".argdown-figure argdown-map").each((index, element) => {
     // Using $(button).click() only works once, because the maximize button gets deleted and recreated as a minimize button. Instead we attach to <div class="component"> and watch events as they bubble up.
-    $(".component", element.shadowRoot).on("click", event => {
+    $(".component header", element.shadowRoot).on("click", event => {
         if (
             event.target.title == "Expand" ||
             event.target.title == "Minimize" ||
