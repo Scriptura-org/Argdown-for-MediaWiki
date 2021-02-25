@@ -7,6 +7,10 @@ argdown.defaultProcesses["wiki-plugin"] = [
 const request = {
     input: process.argv[2],
     process: "wiki-plugin",
+    webComponent: {
+        withoutMaximize: true,
+        initialView: "source"
+    }
 };
 
 const response = argdown.run(request);
