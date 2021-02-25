@@ -8,7 +8,6 @@ const request = {
     input: process.argv[2],
     process: "wiki-plugin",
     webComponent: {
-        withoutMaximize: true,
         initialView: "source"
     }
 };

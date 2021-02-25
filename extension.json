@@ -39,7 +39,7 @@
 			"dependencies": [],
 			"messages": [],
 			"styles": ["argdown.css", "wikiglyphs.css"],
-			"scripts": ["toolbarButton.js"]
+			"scripts": ["toolbarButton.js", "maximizeButton.js"]
 		}
 	},
 	"manifest_version": 2
