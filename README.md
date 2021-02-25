@@ -37,6 +37,10 @@ You can click the "Map" button in the corner to see an automatically-generated m
 
 For more information on composing arguments in Argdown, please see [the official guide](https://argdown.org/guide/creating-argument-maps.html) and [syntax reference](https://argdown.org/syntax/).
 
+## Known bugs
+
+The error `Uncaught TypeError: da is undefined` will appear in your browser console. If you have more than one argument map on your page, you will also see the error `Uncaught DOMException: CustomElementRegistry.define: 'argdown-map' has already been defined as a custom element`. These do not appear to affect functionality.
+
 ## Debugging
 
 This plugin is still under development. If something goes wrong, enabling logging may help to figure out what's going wrong.
