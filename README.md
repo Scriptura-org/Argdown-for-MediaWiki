@@ -1,6 +1,6 @@
 # Argdown
 
-This extension allows contributors to [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) wikis to write arguments in [Argdown](https://argdown.org/), an easy-to-write, machine-parsable format which allows for the automatic generation of argument maps (not yet supported by this plugin). Arguments will be formatted using [Argdown's official engine for Node.js](https://github.com/christianvoigt/argdown).
+This extension allows [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) users to write arguments in [Argdown](https://argdown.org/). It will automatically generate argument maps using [Argdown's official engine for Node.js](https://github.com/christianvoigt/argdown). Since Argdown is text-based (like Markdown or Wikitext), you can use MediaWiki's version-tracking functionality to see how arguments evolve over time and get an argument map for each version.
 
 ## Setup
 
@@ -27,6 +27,14 @@ If you're using [WikiEditor](https://www.mediawiki.org/wiki/Extension:WikiEditor
 
 ![Argdown button screenshot](images/argdown-button-screenshot.png)
 
+Once you save the page, you'll see your argument in a box on the page, like this:
+
+![Argument screenshot](images/argument-screenshot.png)
+
+You can click the "Map" button in the corner to see an automatically-generated map of your argument, like so:
+
+![Argument map screenshot](images/argument-map-screenshot.png)
+
 For more information on composing arguments in Argdown, please see [the official guide](https://argdown.org/guide/creating-argument-maps.html) and [syntax reference](https://argdown.org/syntax/).
 
 ## Debugging
@@ -42,12 +50,6 @@ $wgDebugLogGroups = array(
 ```
 
 This will create an `argdown.log` file in the extension folder.
-
-## Roadmap
-
-- [x] Argdown to HTML rendering
-- [x] Add Argdown button to editing toolbar
-- [ ] Display argument maps
 
 ## Feedback
 
