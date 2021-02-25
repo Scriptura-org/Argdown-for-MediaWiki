@@ -3,9 +3,9 @@
 	"author": [
 		"James Harris"
 	],
-	"url": "https://github.com/DawnPaladin/Argdown",
+	"url": "https://github.com/DawnPaladin/Argdown-for-MediaWiki",
 	"description": "Argument mapping for MediaWiki",
-	"version": "0.2.0",
+	"version": "1.0.1",
 	"license-name": "MIT",
 	"type": "tag",
 	"requires": {
