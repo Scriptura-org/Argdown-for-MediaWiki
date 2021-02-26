@@ -38,7 +38,7 @@
 		"ext.Argdown": {
 			"dependencies": [],
 			"messages": [],
-			"styles": ["argdown.css", "wikiglyphs.css"],
+			"styles": ["argdown.css"],
 			"scripts": ["toolbarButton.js", "maximizeButton.js"]
 		}
 	},
