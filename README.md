@@ -27,13 +27,13 @@ If you're using [WikiEditor](https://www.mediawiki.org/wiki/Extension:WikiEditor
 
 ![Argdown button screenshot](images/argdown-button-screenshot.png)
 
-Once you save the page, you'll see your argument in a box on the page, like this:
-
-![Argument screenshot](images/argument-screenshot.png)
-
-You can click the "Map" button in the corner to see an automatically-generated map of your argument, like so:
+Once you save the page, you'll see an automatically-generated map of your argument, like so:
 
 ![Argument map screenshot](images/argument-map-screenshot.png)
+
+You can click the "Source" button in the corner to see the your argument in written form:
+
+![Argument screenshot](images/argument-screenshot.png)
 
 For more information on composing arguments in Argdown, please see [the official guide](https://argdown.org/guide/creating-argument-maps.html) and [syntax reference](https://argdown.org/syntax/).
 

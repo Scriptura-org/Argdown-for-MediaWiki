@@ -10,7 +10,6 @@ const request = {
     input: process.argv[2],
     process: "wiki-plugin",
     webComponent: {
-        initialView: "source",
         webComponentScriptUrl: extensionsFolderUrl + "/Argdown/resources/argdown-map.js",
         webComponentPolyfillUrl: extensionsFolderUrl + "/Argdown/resources/webcomponents-loader.js",
         globalStylesUrl: extensionsFolderUrl + "/Argdown/resources/argdown-map.css"
