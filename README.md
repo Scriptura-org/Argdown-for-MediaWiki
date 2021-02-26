@@ -39,7 +39,7 @@ For more information on composing arguments in Argdown, please see [the official
 
 ## Known bugs
 
-The error `Uncaught TypeError: da is undefined` will appear in your browser console. If you have more than one argument map on your page, you will also see the error `Uncaught DOMException: CustomElementRegistry.define: 'argdown-map' has already been defined as a custom element`. These do not appear to affect functionality.
+If you have more than one argument map on your page, you will see the error `Uncaught DOMException: CustomElementRegistry.define: 'argdown-map' has already been defined as a custom element`. This should not affect functionality.
 
 ## Debugging
 
