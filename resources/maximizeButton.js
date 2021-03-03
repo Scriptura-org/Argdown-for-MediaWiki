@@ -7,6 +7,9 @@ $(".argdown-figure argdown-map").each((index, element) => {
             event.target.title == "Minimize" ||
             event.target.localName == "svg"
         ) {
+            if ($('body').hasClass('skin-timeless')) {
+                $('#mw-header-container, #mw-header-hack').toggle();
+            }
             $('#mw-navigation').toggle();
         }
     });
