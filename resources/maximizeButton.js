@@ -5,7 +5,8 @@ $(".argdown-figure argdown-map").each((index, element) => {
         if (
             event.target.title == "Expand" ||
             event.target.title == "Minimize" ||
-            event.target.localName == "svg"
+            event.target.localName == "svg" ||
+            event.target.localName == "path"
         ) {
             if ($('body').hasClass('skin-timeless')) {
                 $('#mw-header-container, #mw-header-hack').toggle();

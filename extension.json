@@ -5,7 +5,7 @@
 	],
 	"url": "https://github.com/DawnPaladin/Argdown-for-MediaWiki",
 	"description": "Argument mapping for MediaWiki",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"license-name": "MIT",
 	"type": "tag",
 	"requires": {
