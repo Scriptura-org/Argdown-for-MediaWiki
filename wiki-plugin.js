@@ -1,7 +1,7 @@
 import { argdown } from "@argdown/node";
 
 argdown.defaultProcesses["wiki-plugin"] = [
-    "parse-input", "build-model", "build-map", "highlight-source", "export-dot", "export-svg", "export-web-component"
+    "parse-input", "build-model", "build-map", "highlight-source", "colorize", "export-dot", "export-svg", "export-web-component"
 ];
 
 const extensionsFolderUrl = process.argv[3];
