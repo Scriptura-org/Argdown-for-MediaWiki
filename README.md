@@ -11,9 +11,18 @@ This extension allows [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) user
 5. In `mediawiki/LocalSettings.php`, add this line: `wfLoadExtension( 'Argdown' );`
 6. If you'd like a toolbar button for Argdown, add this line too: `wfLoadExtension( 'WikiEditor' );`
 7. Navigate to Special:Version on your wiki to verify that the extension is installed.
-8. Try it out! Put something like this on one of your pages: `<argdown>[statement]: I am a statement.</argdown>` Save the page. If "[statement]" appears in blue, the extension is working!
+8. Try it out! Copy this block of code into a wiki page and click "Show preview" to see if you get an argument map:
 
-If no text appears when you test the extension, most likely the extension needs more memory. By default, PHP allocates 30 MiB of memory to shell commands, which isn't enough to run Node.js. 
+```
+<argdown>
+[statement]: I am a statement. #tag1
+ - <argument 1>
+ + <argument 2>
+    <_ <argument 3>
+</argdown>
+```
+
+If nothing appears when you test the extension, most likely the extension needs more memory. By default, PHP allocates 30 MiB of memory to shell commands, which isn't enough to run Node.js. 
 
 To check whether this is the problem, try putting this line in `mediawiki/LocalSettings.php`: `$wgMaxShellMemory = 0;` This will disable the memory limitation. You probably don't want to do that long-term, so if setting `$wgMaxShellMemory` to 0 allows Argdown to appear, try setting it to 20000000 and increase it from there until it works.
 
