@@ -52,17 +52,15 @@ For more information on composing arguments in Argdown, please see [the official
 - Timeless
 - Tweeki
 
-Other skins may also work, but sometimes the behavior of the "maximize" button needs to be adjusted for each skin. If this happens to you, please [open a GitHub issue](https://github.com/DawnPaladin/Argdown-for-MediaWiki/issues).
+Other skins may also work, but sometimes the behavior of the "maximize" button needs to be adjusted for each skin.
 
 ## Known bugs
 
-If you have more than one argument map on your page, you will see the error `Uncaught DOMException: CustomElementRegistry.define: 'argdown-map' has already been defined as a custom element`. This should not affect functionality.
+If you have more than one argument map on your page, you will see the error `Uncaught DOMException: CustomElementRegistry.define: 'argdown-map' has already been defined as a custom element` in your browser's console. This should not affect functionality.
 
 ## Debugging
 
-This plugin is still under development. If something goes wrong, enabling logging may help to figure out what's going wrong.
-
-To set up the log file, add this to your `LocalSettings.php`:
+To enable logging, add this to your `LocalSettings.php`:
 
 ```php
 $wgDebugLogGroups = array(
@@ -71,9 +69,5 @@ $wgDebugLogGroups = array(
 ```
 
 This will create an `argdown.log` file in the extension folder.
-
-## Feedback
-
-If you'd like to report a bug or provide other feedback, please [open a GitHub issue](https://github.com/DawnPaladin/Argdown-for-MediaWiki/issues).
 
 Last tested with MediaWiki 1.35.1 and Argdown 1.5. 
